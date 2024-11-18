@@ -2,7 +2,7 @@
 name = "rustdesk-portable-packer"
 version = "1.3.3"
 edition = "2021"
-description = "RustDesk Remote Desktop"
+description = "TecDesk Remote Desktop"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -19,9 +19,9 @@ native-windows-gui = {version = "1.0", default-features = false, features = ["an
 
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2024 Purslane Ltd. All rights reserved."
-ProductName = "RustDesk"
+ProductName = "TecDesk"
 OriginalFilename = "rustdesk.exe"
-FileDescription = "RustDesk Remote Desktop"
+FileDescription = "TecDesk Remote Desktop"
 #ProductVersion = ""
 
 [target.'cfg(target_os="windows")'.build-dependencies]
