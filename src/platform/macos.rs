@@ -220,7 +220,7 @@ pub fn is_installed_daemon(prompt: bool) -> bool {
 
 fn correct_app_name(s: &str) -> String {
     let s = s.replace("rustdesk", &crate::get_app_name().to_lowercase());
-    let s = s.replace("RustDesk", &crate::get_app_name());
+    let s = s.replace("TecDesk", &crate::get_app_name());
     s
 }
 
@@ -569,8 +569,8 @@ pub fn start_os_service() {
     /* // mouse/keyboard works in prelogin now with launchctl asuser.
        // below can avoid multi-users logged in problem, but having its own below problem.
        // Not find a good way to start --cm without root privilege (affect file transfer).
-       // one way is to start with `launchctl asuser <uid> open -n -a /Applications/RustDesk.app/ --args --cm`,
-       // this way --cm is started with the user privilege, but we will have problem to start another RustDesk.app
+       // one way is to start with `launchctl asuser <uid> open -n -a /Applications/TecDesk.app/ --args --cm`,
+       // this way --cm is started with the user privilege, but we will have problem to start another TecDesk.app
        // with open in explorer.
         use std::sync::{
             atomic::{AtomicBool, Ordering},
